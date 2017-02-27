@@ -9,7 +9,7 @@
   "author": "Dominik Helleberg",
   "license": "Apache-2.0",
   "dependencies": {
-    "mqtt":"^2.4.0"
-    
+    "mqtt":"^2.4.0",
+    "basic-auth":"^1.1.0"
   }
 }
