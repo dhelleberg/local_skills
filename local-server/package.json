@@ -1,0 +1,15 @@
+{
+  "name": "local-server",
+  "version": "1.0.0",
+  "description": "local-server for exposing mqtt based values to alex / google home",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dominik Helleberg",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "mqtt":"^2.4.0"
+    
+  }
+}
