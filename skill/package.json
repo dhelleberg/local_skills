@@ -1,0 +1,14 @@
+{
+  "name": "local-home-info-skill",
+  "version": "1.0.0",
+  "description": "Alexa Skill to get values from my local home, only for me ;)",
+  "author": "Dominik Helleberg",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "node-aws-lambda": "^0.1.8",
+    "gulp": "^3.9.1",
+    "gulp-zip" : "^4.0.0",
+    "gulp-clean": "0.3.2",
+    "child_process": "^1.0.2"
+  }
+}
