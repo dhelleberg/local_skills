@@ -52,15 +52,22 @@ var handlers = {
         this.emit('Du sprichst mit Deinem zuhause.');
     },
     'GetOutsideTemp': function () {
+        var that = this;
         getHomeData("Heating_Outside_Temperature", function(jsonResponse) {
             console.log('got: '+JSON.stringify(jsonResponse));
-            var temperature = jsonResponse.jsonResponse.Heating_Outside_Temperature;
-            this.emit(':tell','Draussen sind '+temperature+' Grad');
+           var temperature = jsonResponse.jsonResponse.Heating_Outside_Temperature;
+            var roundTemp = Math.round(temperature * 10) / 10;
+            var temp_with_comma = roundTemp.toString().replace(".",",");
+            that.emit(':tell','Draussen sind '+temp_with_comma+' Grad');
         });
     },
     
 };
 
-getHomeData("power_current", function(jsonResponse) {
+      /* getHomeData("Heating_Outside_Temperature", function(jsonResponse) {
             console.log('got: '+JSON.stringify(jsonResponse));
-});
+            var temperature = jsonResponse.jsonResponse.Heating_Outside_Temperature;
+            var roundTemp = Math.round(temperature * 10) / 10;
+            var temp_with_comma = roundTemp.toString().replace(".",",");
+            console.log(temp_with_comma);
+        });*/

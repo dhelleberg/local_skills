@@ -1,7 +1,16 @@
 {
   "intents": [
     {
-      "intent": "HelloWorldIntent"
+      "intent": "GetOutsideTemp"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
     }
   ]
 }
